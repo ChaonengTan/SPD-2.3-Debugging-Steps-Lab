@@ -6,9 +6,13 @@ Exercise 4
 #
 # TODO: Gather information about the source of the error and paste your findings here. E.g.:
 # - What is the expected vs. the actual output?
+# expected:4 ; actual:err
 # - What error message (if any) is there?
+# maximum recursion depth
 # - What line number is causing the error?
+# 32
 # - What can you deduce about the cause of the error?
+# mid is returning 3
 
 
 # PART 2: State Assumptions
@@ -18,7 +22,7 @@ Exercise 4
 # HINT: It may help to draw a picture to clarify what your assumptions are.
 
 def binary_search(arr, element, low=0, high=None):
-      """Returns the index of the given element within the array by performing a binary search."""
+    """Returns the index of the given element within the array by performing a binary search."""
     if high == None:
         high = len(arr) - 1
 
@@ -26,7 +30,7 @@ def binary_search(arr, element, low=0, high=None):
         return -1
 
     mid = (high + low) // 2
-
+    # print(mid)
     if arr[mid] == element: 
         return mid
 
