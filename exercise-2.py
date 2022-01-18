@@ -6,9 +6,12 @@ Exercise 2
 #
 # TODO: Gather information about the source of the error and paste your findings here. E.g.:
 # - What is the expected vs. the actual output?
+# expected:false, true ; actual:false, false
 # - What error message (if any) is there?
 # - What line number is causing the error?
+# 27, 30
 # - What can you deduce about the cause of the error?
+# the function returns true or false without completing the for loop
 
 
 # PART 2: State Assumptions
@@ -23,6 +26,7 @@ def contains_3_consecutive(list_of_nums):
             list_of_nums[i+2] == list_of_nums[i] + 2):
             return True
         else:
+            # print(list_of_nums[i], list_of_nums[i+1], list_of_nums[i+2])
             return False
 
     return False
