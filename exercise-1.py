@@ -6,9 +6,13 @@ Exercise 1
 #
 # TODO: Gather information about the source of the error and paste your findings here. E.g.:
 # - What is the expected vs. the actual output?
+# expected:4 ; actual:err
 # - What error message (if any) is there?
+# out of range
 # - What line number is causing the error?
+# 27
 # - What can you deduce about the cause of the error?
+# when it gets to the last iteration in the for loop listOfNums[i+1] is out of bounds
 
 
 # PART 2: State Assumptions
