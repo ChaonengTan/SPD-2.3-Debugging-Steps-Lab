@@ -6,9 +6,13 @@ Exercise 3
 #
 # TODO: Gather information about the source of the error and paste your findings here. E.g.:
 # - What is the expected vs. the actual output?
+# expected:[1, 2, 3, 5, 6] ; actual: err
 # - What error message (if any) is there?
+# index out of range
 # - What line number is causing the error?
+# 33
 # - What can you deduce about the cause of the error?
+# j attempts to go index -6 which dosent exist(?)
 
 
 # PART 2: State Assumptions
@@ -24,6 +28,7 @@ def insertion_sort(arr):
 
         j = i-1
         while key < arr[j] : 
+            # print(j)
             arr[j+1] = arr[j] 
             j -= 1
         arr[j+1] = key
